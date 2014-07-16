@@ -1,5 +1,5 @@
 /*global app, module, test, strictEqual */
-module('test-call-heads-or-tails.js');
+module('call-heads-or-tails.js');
 
 test('callHeadsOrTails.create() - The factory create method should return an object with an execute method.', function () {
 	'use strict';
