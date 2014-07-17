@@ -1,19 +1,18 @@
 /*global app */
 app.usecase.callHeadsOrTails = {
-	create: function () {
+	create: function (coin) {
 		'use strict';
 		var callHeadsOrTails;
 		
 		callHeadsOrTails = {
-			HEADS: 'heads',
-			TAILS: 'tails',
+			coin: coin,
 			sideCalled: null,
-			execute: function (coinSide) {
-				callHeadsOrTails.sideCalled = coinSide;
+			execute: function (sideCalled) {
+				callHeadsOrTails.sideCalled = sideCalled;
 				return callHeadsOrTails.sideCalled;
 			},
 			wasHeadsCalled: function () {
-				return callHeadsOrTails.sideCalled === callHeadsOrTails.HEADS;
+				return callHeadsOrTails.sideCalled === coin.HEADS;
 			}
 		};
 		
