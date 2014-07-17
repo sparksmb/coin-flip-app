@@ -1,12 +1,13 @@
 /*global app */
 app.usecase.flipCoin = {
-	create: function () {
+	create: function (coin) {
 		'use strict';
 		var flipCoin;
 		
 		flipCoin = {
-			execute: function () {
-				
+			sideUp: null,
+			execute: function (halfRotaions) {
+				return coin.flip(halfRotaions);
 			}
 		};
 		
