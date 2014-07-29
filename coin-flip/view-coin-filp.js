@@ -1,6 +1,6 @@
 /*global app */
 app.usecase.viewCoinFlip = {
-	create: function (view, callHeadsOrTails, flipCoin) {
+	create: function (callHeadsOrTails, flipCoin, view) {
 		'use strict';
 		var viewCoinFlip;
 		
